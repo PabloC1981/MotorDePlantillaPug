@@ -1,0 +1,17 @@
+- let stock = productoArray.length>0
+html
+    head   
+        title="Lavoro Indumentaria Escolar"
+        link(rel="stylesheet", href="../style.css")
+    body(class="container", class="text")
+        h1="Lista de Productos"
+        if stock
+            ul
+                each producto in productoArray 
+                    li
+                        div
+                            p=producto.name
+                            p=producto.price
+            h2="Por favor, seleccione un producto de la lista"
+        else 
+            P="No hay productos en stock, disculpe las molestias"    
